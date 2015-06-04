@@ -1,0 +1,15 @@
+[user]
+	name = dristic
+	email = dristic101@gmail.com
+[color]
+	ui = true
+[push]
+  default = simple
+[alias]
+  co = checkout
+  ec = config --global -e
+  up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+  cob = checkout -b
+  cm = !git add -A && git commit -m
+  wip = !git add -u && git commit -m "WIP"
+
